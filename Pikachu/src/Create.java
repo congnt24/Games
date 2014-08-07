@@ -124,7 +124,6 @@ public class Create implements ActionListener {
 		
 	}
 	public void makeButton(){
-		counter=0;
 		timeCounter.start();
 		btnImg=new JButton[SO_PT];
 		Main_Activity.panel.removeAll();
@@ -257,8 +256,10 @@ public class Create implements ActionListener {
 	}
 	public void New(){
 		A=new int[SO_PT];
+		counter=0;
 		Random();
 		makeButton();
+		checkAll();
 	}
 	protected void Random() {
 		// TODO Auto-generated method stub
@@ -351,22 +352,22 @@ public class Create implements ActionListener {
 											}
 											
 										};
-										tmpp.add(new JButton("****You Win****"));
-										jd.add(tmpp);
-										jd.setTitle("Congratulation");
-										jd.setBounds(500, 100, 400, 200);
-										jd.show();
-										JOptionPane.showMessageDialog(null, "You Win");
+										
 										if(score>hightscore){
 											hightscore=score;
 											try {
 												writer= new PrintWriter(f);
 												writer.write(Integer.toString(score));
-												JOptionPane.showMessageDialog(null, "Ban da dat ky luc voi: "+score+" diem.");
+												tmpp.add(new JButton("Chuc Mung Ban Da Dat ky luc voi: "+score+" diem."));
 												writer.close();
 											} catch (IOException e) {
 											}
 										}
+										tmpp.add(new JButton("****You Win****"));
+										jd.add(tmpp);
+										jd.setTitle("Congratulation");
+										jd.setBounds(500, 100, 400, 200);
+										jd.show();
 										Main_Activity.panel.removeAll();
 										
 									}else {
@@ -527,6 +528,9 @@ public class Create implements ActionListener {
 				}
 			}
 			makeButton();
+			if (checkAll()) {
+				return true;
+			}
 		}
 		return false;
 	}
