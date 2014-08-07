@@ -1,6 +1,7 @@
 /.classpath
 /.project
 /.settings/
+/images/
 /Create$1.class
 /Create$2$1.class
 /Create$2.class
@@ -14,6 +15,3 @@
 /Main_Activity$4.class
 /Main_Activity$5.class
 /Main_Activity.class
-/UseCase.uxf
-/bieudotrinhtu.uxf
-/images/
