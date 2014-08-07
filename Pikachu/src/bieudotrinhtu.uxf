@@ -40,10 +40,10 @@
       <x>220</x>
       <y>90</y>
       <w>50</w>
-      <h>450</h>
+      <h>490</h>
     </coordinates>
-    <panel_attributes>lt=:</panel_attributes>
-    <additional_attributes>30;30;30;430</additional_attributes>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>30;30;30;470</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -51,10 +51,10 @@
       <x>460</x>
       <y>90</y>
       <w>50</w>
-      <h>450</h>
+      <h>490</h>
     </coordinates>
-    <panel_attributes>lt=:</panel_attributes>
-    <additional_attributes>30;30;30;130;30;430</additional_attributes>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>30;30;30;130;30;470</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -64,7 +64,7 @@
       <w>50</w>
       <h>420</h>
     </coordinates>
-    <panel_attributes>lt=:</panel_attributes>
+    <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>30;30;30;400</additional_attributes>
   </element>
   <element>
@@ -83,7 +83,7 @@ lt=&lt;-</panel_attributes>
     <type>com.umlet.element.Package</type>
     <coordinates>
       <x>160</x>
-      <y>230</y>
+      <y>270</y>
       <w>530</w>
       <h>290</h>
     </coordinates>
@@ -94,8 +94,8 @@ bg=orange</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Text</type>
     <coordinates>
-      <x>190</x>
-      <y>260</y>
+      <x>180</x>
+      <y>290</y>
       <w>140</w>
       <h>100</h>
     </coordinates>
@@ -106,7 +106,7 @@ bg=orange</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>220</x>
-      <y>260</y>
+      <y>270</y>
       <w>290</w>
       <h>70</h>
     </coordinates>
@@ -141,12 +141,12 @@ bg=orange</panel_attributes>
   <element>
     <type>com.umlet.element.custom.Text</type>
     <coordinates>
-      <x>470</x>
-      <y>380</y>
+      <x>460</x>
+      <y>370</y>
       <w>130</w>
       <h>50</h>
     </coordinates>
-    <panel_attributes>Đã ăn hết các cặp</panel_attributes>
+    <panel_attributes>Trên bàn hết quân</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -192,7 +192,7 @@ bg=orange</panel_attributes>
       <w>50</w>
       <h>440</h>
     </coordinates>
-    <panel_attributes>lt=:</panel_attributes>
+    <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>30;30;30;420</additional_attributes>
   </element>
   <element>
@@ -227,7 +227,7 @@ lt=&lt;-</panel_attributes>
       <w>240</w>
       <h>170</h>
     </coordinates>
-    <panel_attributes>opt
+    <panel_attributes>alt
 bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
@@ -246,11 +246,11 @@ bg=orange</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>740</x>
-      <y>400</y>
+      <y>410</y>
       <w>210</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>Chiến thắng
+    <panel_attributes>Lưu vào cơ sở DL
 lt=&lt;-</panel_attributes>
     <additional_attributes>190;50;30;50</additional_attributes>
   </element>
@@ -262,7 +262,7 @@ lt=&lt;-</panel_attributes>
       <w>50</w>
       <h>440</h>
     </coordinates>
-    <panel_attributes>lt=:</panel_attributes>
+    <panel_attributes>lt=.</panel_attributes>
     <additional_attributes>30;30;30;420</additional_attributes>
   </element>
   <element>
@@ -286,5 +286,62 @@ lt=&lt;-</panel_attributes>
     </coordinates>
     <panel_attributes>Kết Quả</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>130</x>
+      <y>200</y>
+      <w>570</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes>loop
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>200</x>
+      <y>200</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Chon 1 cap bat ky</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>420</x>
+      <y>400</y>
+      <w>290</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>30;30;270;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>450</x>
+      <y>430</y>
+      <w>130</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>else</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>0</x>
+      <y>160</y>
+      <w>510</w>
+      <h>330</h>
+    </coordinates>
+    <panel_attributes>Đổi màn khác
+lt=&lt;-</panel_attributes>
+    <additional_attributes>250;30;80;30;80;310;490;310</additional_attributes>
   </element>
 </diagram>

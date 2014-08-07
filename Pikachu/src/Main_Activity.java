@@ -52,7 +52,7 @@ public class Main_Activity extends Create implements ActionListener{
 				lblTime.setText("Time = "+"120");
 				New();
 			}else if(source == btnTop || source == mntmTop){
-//				JOptionPane.showMessageDialog(null, "Hight Score: "+hightscore);
+//				JOptionPane.showMessageDialog(null, "High Score: "+highscorescore);
 				JDialog jd=new JDialog();
 				JPanel tmpp=new JPanel(){
 					private static final long serialVersionUID = 1L;
@@ -68,7 +68,7 @@ public class Main_Activity extends Create implements ActionListener{
 					}
 					
 				};
-				tmpp.add(new JButton("Hight Score: "+hightscore));
+				tmpp.add(new JButton("Hight Score: "+highscore));
 				jd.add(tmpp);
 				jd.setTitle("Hight Score");
 				jd.setBounds(500, 100, 400, 200);
@@ -157,7 +157,7 @@ public class Main_Activity extends Create implements ActionListener{
 		
 		 mntmNewGame = new JMenuItem("New Game");
 		 mntmSetting = new JMenuItem("Difficult");
-		 mntmTop = new JMenuItem("Hight Score");
+		 mntmTop = new JMenuItem("High Score");
 		 mntmExit = new JMenuItem("Exit");
 		mnFile.add(mntmNewGame);
 		mnFile.add(mntmTop);
@@ -200,7 +200,7 @@ public class Main_Activity extends Create implements ActionListener{
 		
 		btnNewGame = new JButton("New Game");
 		panel_3.add(btnNewGame);
-		btnTop=new JButton("Hight Score");
+		btnTop=new JButton("High Score");
 		btnTop.addActionListener(menu);
 		panel_3.add(btnTop);
 		

@@ -37,7 +37,7 @@ public class Create implements ActionListener {
 	protected Timer timeCounter;
 	protected JLabel lblMap,lblScore, lblTime;
 	int p1;
-	int hightscore=0;
+	int highscore=0;
 	File dir=new File("C:\\Pikachu");
 	File f= new File(dir,"top.txt");
 	PrintWriter writer;
@@ -107,9 +107,9 @@ public class Create implements ActionListener {
 			br=new BufferedReader(new FileReader(f));
 			String line;
 			if((line=br.readLine())!=null){
-				hightscore=Integer.parseInt(line);
+				highscore=Integer.parseInt(line);
 			}else{
-				hightscore=0;
+				highscore=0;
 			}
 			br.close();
 		} catch (IOException e1) {
@@ -352,8 +352,8 @@ public class Create implements ActionListener {
 											
 										};
 										
-										if(score>hightscore){
-											hightscore=score;
+										if(score>highscore){
+											highscore=score;
 											try {
 												writer= new PrintWriter(f);
 												writer.write(Integer.toString(score));
